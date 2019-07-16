@@ -16,10 +16,13 @@ var Letter = function(letter){
             }
         }
     };
-
+    console.log(Letter)
+console.log(this.letter)
     this.check = function(check){
         if(check === this.letter){
             this.guess = true;
         }
     }
 };
+
+module.exports = Letter;
